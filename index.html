@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Multiple Attributes</title>
+</head>
+<body>
+    <h2>Select Attributes</h2>
+    <form id="attributesForm">
+        <label for="attributesSelect">Select multiple attributes:</label>
+        <select multiple id="attributesSelect">
+            <option value="attribute1">Attribute 1</option>
+            <option value="attribute2">Attribute 2</option>
+            <option value="attribute3">Attribute 3</option>
+            <!-- Add more options as needed -->
+        </select>
+        <button type="button" onclick="submitAttributes()">Submit</button>
+    </form>
+
+    <script>
+        function submitAttributes() {
+            var selectedOptions = document.getElementById('attributesSelect').selectedOptions;
+            var values = Array.from(selectedOptions).map(option => option.value);
+            console.log(values); // We'll replace this with the code to send data to the backend later
+        }
+    </script>
+</body>
+</html>
