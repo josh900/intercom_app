@@ -6,9 +6,9 @@
 
 <meta charset="utf-8">
 
-<title>HTML Starter</title>
+<title>Custom Attributes Selector</title>
 
-<meta name="description" content="_______________INSERT_DECRIPTION_HERE_______________">
+<meta name="description" content="Select multiple values for a custom attribute.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- CSS -->
@@ -26,6 +26,18 @@
 
 <h1>SUBMIT URL:</h1>
 <p id="submit"></p>
+
+<h2>Select Attributes</h2>
+<form id="attributesForm">
+    <label for="attributesSelect">Select multiple attributes:</label>
+    <select multiple id="attributesSelect">
+        <option value="attribute1">Attribute 1</option>
+        <option value="attribute2">Attribute 2</option>
+        <option value="attribute3">Attribute 3</option>
+        <!-- Add more options as needed -->
+    </select>
+    <button type="button" onclick="submitAttributes()">Submit</button>
+</form>
   
   
 <!-- JavaScript -->
@@ -40,8 +52,7 @@ document.getElementById("submit").innerHTML =
 window.location.href+"submit";
   
 </script>
-  
-  
+
 <!-- #INSERT YOUR MESSENGER CODE HERE -->
 
 </body>
